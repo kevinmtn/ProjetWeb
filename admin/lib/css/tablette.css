@@ -1,0 +1,30 @@
+#page{
+    min-width:320px;
+}
+
+#colGauche{
+    float:none;
+    width:100%;
+    margin-top:2%;
+}
+
+ul li{
+    float:left;
+    width:50%;
+}
+
+#contenu{
+    width:100%;
+}
+
+#pub{
+    visibility:hidden;
+}
+
+.img_header{
+
+    display:block;
+    height:200px;
+    width:1000px;
+    background-repeat:no-repeat;
+}

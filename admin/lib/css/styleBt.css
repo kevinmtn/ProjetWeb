@@ -1,0 +1,212 @@
+
+.element {
+@include float-left;
+}
+.another-element {
+@include float-right;
+}
+.one-more {
+@include float-none;
+}
+
+.navbar{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    position : fixed;
+}
+
+.navbar-collapse {
+
+    display: flex;
+
+}
+.nav-item{
+    display: flex;
+}
+
+.blockquote{
+
+    margin-top: 70px;
+}
+
+body {
+    padding-top: 60px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+:root {
+    --transition-time: 0.5s;
+}
+
+/* Cartes de la page accueil*/
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    padding: 4rem;
+    margin: 0 auto;
+    width: max-content;
+}
+
+
+.card {
+    font-family: 'Heebo';
+    --bg-filter-opacity: 0.5;
+    background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+    height: 21em;
+    width: 15em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    transition: all, var(--transition-time);
+    position: relative;
+    overflow: hidden;
+    border: 9px solid #ccc;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: rotate(0);
+}
+
+.card h1 {
+    font-size: 1.5em;
+    text-align: center;
+    color: chocolate;
+    margin-top: 40px;
+    margin-bottom: 70px;
+
+}
+
+.card p {
+    font-size: 0.75em;
+    font-family: 'Open Sans';
+    margin-top: 0.5em;
+
+}
+
+.card .tags {
+    display: flex;
+    text-align: right;
+
+}
+
+.card .tags .tag {
+    font-size: 0.75em;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-top: 100px;
+    transition: all, var(--transition-time);
+
+}
+
+.card:hover .tags .tag {
+    background: chocolate;
+    color: #dddddd;
+}
+
+.card a{
+
+    text-decoration: none;
+}
+
+.card:before, .card:after {
+    content: '';
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    z-index: -5;
+    transition: all, var(--transition-time);
+    transition-timing-function: ease-in-out;
+}
+
+.card:before {
+    background: #ddd;
+    width: 210%;
+    height: 230%;
+}
+
+.card:after {
+    background: #333333;
+    width: 200%;
+    height: 200%;
+}
+
+.card:hover {
+    color: #cccccc;
+}
+
+.card:hover:before, .card:hover:after {
+    transform: scale(1);
+}
+
+.card-grid-space .num {
+
+    font-size: 3em;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+}
+
+/* Pied de page*/
+.footer-basic {
+    padding:10px 0;
+    background-color: #333333;
+    color: chocolate;
+    width:100%;
+    padding-top:20px;
+    margin-top: 100px;
+
+}
+
+.footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+    color: white;
+}
+
+.footer-basic .social > a {
+    font-size:20px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+
+}
+
+.footer-basic .social > a:hover {
+    opacity:0.9;
+    color: chocolate;
+
+}
+
+.footer-basic .copyright {
+    margin-top:14px;
+    text-align:center;
+    font-size:12px;
+    color:#aaa;
+
+
+}
+
