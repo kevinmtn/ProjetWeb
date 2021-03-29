@@ -1,32 +1,20 @@
 
-.element {
-@include float-left;
-}
-.another-element {
-@include float-right;
-}
-.one-more {
-@include float-none;
-}
-
-.navbar{
+.navbar {
     margin-top: 0px;
     margin-bottom: 10px;
     display: flex;
-    position : fixed;
+    position: fixed;
 }
 
 .navbar-collapse {
-
-    display: flex;
-
-}
-.nav-item{
     display: flex;
 }
 
-.blockquote{
+.nav-item {
+    display: flex;
+}
 
+.blockquote {
     margin-top: 70px;
 }
 
@@ -34,15 +22,13 @@ body {
     padding-top: 60px;
 }
 
-
-
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
 
 :root {
     --transition-time: 0.5s;
 }
 
-/* Cartes de la page accueil*/
+/* Cartes*/
 .cards-wrapper {
     display: flex;
     justify-content: center;
@@ -51,162 +37,291 @@ body {
     grid-gap: 4rem;
     padding: 4rem;
     margin: 0 auto;
-    width: max-content;
+   width: 100%;
+    flex-flow: row wrap;
 }
-
 
 .card {
     font-family: 'Heebo';
     --bg-filter-opacity: 0.5;
-    background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
-    height: 21em;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+    height: 20em;
     width: 15em;
     font-size: 1.5em;
-    color: white;
+    color: whitesmoke;
     border-radius: 1em;
     padding: 1em;
-    display: flex;
+
     align-items: flex-end;
     background-size: cover;
     background-position: center;
-    box-shadow: 0 0 5em -1em black;
-    transition: all, var(--transition-time);
     position: relative;
     overflow: hidden;
-    border: 9px solid #ccc;
     text-decoration: none;
-}
-
-.card:hover {
-    transform: rotate(0);
+    margin: 1em;
+    border: none;
+    background-color: #e7e7e7;
+    display: flex;
 }
 
 .card h1 {
     font-size: 1.5em;
     text-align: center;
-    color: chocolate;
+    color: #e9bc36;
     margin-top: 40px;
     margin-bottom: 70px;
-
 }
 
 .card p {
     font-size: 0.75em;
     font-family: 'Open Sans';
-    margin-top: 0.5em;
-
+    color: #888888;
 }
 
 .card .tags {
     display: flex;
-    text-align: right;
-
+    text-align: left;
+    margin-top: 80px;
 }
 
 .card .tags .tag {
     font-size: 0.75em;
-    background: rgba(255,255,255,0.5);
+   background-color: peru;
     border-radius: 0.3rem;
     padding: 0 0.5em;
-    margin-top: 100px;
     transition: all, var(--transition-time);
-
 }
 
-.card:hover .tags .tag {
-    background: chocolate;
-    color: #dddddd;
-}
-
-.card a{
-
+.card a {
     text-decoration: none;
 }
 
-.card:before, .card:after {
-    content: '';
-    transform: scale(0);
-    transform-origin: top left;
-    border-radius: 50%;
-    position: absolute;
-    left: -50%;
-    top: -50%;
-    z-index: -5;
-    transition: all, var(--transition-time);
-    transition-timing-function: ease-in-out;
-}
-
-.card:before {
-    background: #ddd;
-    width: 210%;
-    height: 230%;
-}
-
-.card:after {
-    background: #333333;
-    width: 200%;
-    height: 200%;
-}
-
-.card:hover {
-    color: #cccccc;
-}
-
-.card:hover:before, .card:hover:after {
-    transform: scale(1);
+.card-title{
+    margin-bottom: -20px;
+    text-align: left;
 }
 
 .card-grid-space .num {
-
     font-size: 3em;
-    margin-bottom: 1.2rem;
-    margin-left: 1rem;
+}
+.card-footer{
+
+    margin-top: 100px;
 }
 
 /* Pied de page*/
 .footer-basic {
-    padding:10px 0;
+    padding: 10px 0;
     background-color: #333333;
     color: chocolate;
-    width:100%;
-    padding-top:20px;
+    width: 100%;
+    padding-top: 20px;
     margin-top: 100px;
-
 }
 
 .footer-basic .social {
-    text-align:center;
-    padding-bottom:25px;
+    text-align: center;
+    padding-bottom: 25px;
     color: white;
 }
 
 .footer-basic .social > a {
-    font-size:20px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid #ccc;
-    margin:0 8px;
-    color:inherit;
-    opacity:0.75;
-
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
 }
 
 .footer-basic .social > a:hover {
-    opacity:0.9;
+    opacity: 0.9;
     color: chocolate;
-
 }
 
 .footer-basic .copyright {
-    margin-top:14px;
-    text-align:center;
-    font-size:12px;
-    color:#aaa;
+    margin-top: 14px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
+.btn {
+
+    background-color: brown;
+    color: whitesmoke;
+    text-align: right;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.lien {
+
+    color: chocolate;
+}
+
+.form-bg{
+    text-align: center;
+    flex-flow: row wrap;
 
 
 }
+.form-container{
+    margin-top: 100px;
+    background-color: #dddddd;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 30px;
+    border-radius: 20px;
+    width: 900px;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.form-container .title{
+    margin-top: 10px;
+    font-size: 35px;
+    color: chocolate;
+}
+.form-group{
+    text-align: left;
+}
 
+.form-container .sub-title{
+    color: chocolate;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.form-container .form-horizontal{ font-size: 0; }
+.form-container .form-horizontal .form-group{
+    color: #333;
+    width: 50%;
+    padding: 0 8px;
+    margin: 0 0 15px;
+    display: inline-block;
+}
+
+.form-container .form-horizontal .form-group label{
+    font-size: 17px;
+    font-weight: 600;
+}
+.form-container .form-horizontal .form-control{
+    color: #888;
+    background: gainsboro;
+    font-weight: 400;
+    letter-spacing: 1px;
+    height: 40px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 2px solid #e7e7e7;
+    box-shadow: none;
+}
+.form-container .form-horizontal .form-control:focus{ box-shadow: 0 0 5px  #aaaaaa; }
+.form-container .form-horizontal .check-terms{
+    padding: 0 8px;
+    margin: 0 0 25px;
+}
+.form-container .form-horizontal .check-terms .check-label{
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.form-container .signin-link{
+    color: #333;
+    font-size: 14px;
+    width: calc(100% - 190px);
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-container .signin-link{
+    color: #333;
+    font-size: 14px;
+    width: calc(100% - 190px);
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.form-container .signin-link a{
+    color: chocolate;
+    font-weight: 600;
+   margin-top: 60px;
+}
+
+.check-terms{
+    text-align: left;
+}
+.signin-link{
+    text-align: left;
+}
+
+.btn-primary {
+    border-color: rgba( 255, 255, 255, 0);
+    background: -moz-linear-gradient(left,  brown 0%, #fca86c 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, chocolate 0%, brown 99%); /* Chrome10-25,Safari5.1-6 */
+    text-transform: uppercase;
+    border-radius: .15rem;
+    width: auto;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 80px;
+}
+
+.modal-body {
+    display: flex;
+    padding: 0;
+    border-radius: 4rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.modal-content {
+    border-radius: 4rem;
+    width: 140%;
+    -webkit-box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+    -moz-box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+    box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+}
+.modal-content h1, .modal-content h2, .modal-content h3 {
+    text-align: center;
+}
+.modal-content h1 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.modal-content h3 {
+    font-size: 1.4em;
+    color: white;
+    margin-top: 150px;
+    font-family: 'PT Sans', sans-serif;
+
+}
+.modal-content h5 {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+    margin-top: 100px;
+}
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.column#main {
+    flex: 75%;
+    padding: 50px;
+    margin-top: 30px;
+    margin-left: 15px;
+}

@@ -1,8 +1,4 @@
 
-/*
-@import url("banniere_chocolat.jpg") only screen and (min-width:760px);
-@import url("banniere_chocolat.css") only screen and (min-width:321px)and (max-width:759px);
-@import url("banniere_chocolat.css") only screen and (max-width:320px);*/
 
 @media screen and (max-width: 1285px) {
     .cards-wrapper {
@@ -49,3 +45,11 @@
     .navbar .dropdown-menu.fade-up{ top:180%;  }
     .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
 }
+
+@media only screen and (max-width:479px){
+    .form-container .form-horizontal .form-group{ width: 100%; }
+    .form-container .signin-link {
+        width: 100%;
+        margin: 0 10px 15px;
+    }}
+

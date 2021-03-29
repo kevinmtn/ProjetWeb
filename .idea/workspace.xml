@@ -20,9 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="811281c6-2479-47f7-84a9-b7647cc30471" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/connection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/produits_accueil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/images/banniere_chocolat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/images/banniere_chocolat2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/images/elephant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/mediaqueries.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/mediaqueries.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/styleBt.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/styleBt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/style_pc.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/style_pc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/Connexion.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/Connexion.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/Theme.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ThemeBD.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/pg_connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/pg_connect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index_.php" beforeDir="false" afterPath="$PROJECT_DIR$/index_.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/php/public_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/boutique.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/avis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/produits.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +51,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +73,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/lib/php/classes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Projet_kevinMaton\admin\lib\php\classes" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -60,6 +93,12 @@
       <workItem from="1615888346640" duration="266000" />
       <workItem from="1615971197102" duration="376000" />
       <workItem from="1615985767257" duration="1810000" />
+      <workItem from="1616318980554" duration="3520000" />
+      <workItem from="1616686895496" duration="3975000" />
+      <workItem from="1616845981300" duration="15067000" />
+      <workItem from="1616923124172" duration="19649000" />
+      <workItem from="1617008019267" duration="8341000" />
+      <workItem from="1617023273181" duration="4236000" />
     </task>
     <task id="LOCAL-00001" summary="Depot du 15 mars">
       <created>1615888409926</created>
@@ -91,10 +130,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Depot du 15 mars" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1615888056002">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616690698946">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1615888056002" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1616690698946" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1616848472534">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1616848472534" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615888420199">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

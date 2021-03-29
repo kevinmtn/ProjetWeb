@@ -1,4 +1,4 @@
 <?php
-$dsn = 'pgsql:host=localhost;dbname=Boulangerie;port=5432';
-$user = 'Boulangerie';
-$password = 'boulangerie';
+$dsn = 'pgsql:host=localhost;dbname=KevinMaton_Projet;port=5432';
+$user = 'BD_KevinMaton';
+$password = 'BD_KevinMaton';

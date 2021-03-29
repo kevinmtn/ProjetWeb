@@ -22,13 +22,14 @@ $cnx = Connexion::getInstance($dsn, $user, $password);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./admin/lib/css/style.css"/>
-    <link rel="stylesheet" href="./admin/lib/css/custom.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./admin/lib/css/style_pc.css"/>
     <link rel="stylesheet" href="./admin/lib/css/mediaqueries.css"/>
     <link rel="stylesheet" href="./admin/lib/css/styleBt.css"/>
     <link rel="stylesheet" href="./admin/lib/css/custom.css"/>
+    <script src="./admin/lib/js/fonctions_jquery.js"></script>
+
 </head>
 
 <body class="bg-dark">
@@ -69,13 +70,15 @@ $cnx = Connexion::getInstance($dsn, $user, $password);
     </section>
 
 </div>
-<nav>
+
+<footer>
     <?php
-    $path = "./lib/php/public_footer.php";
-    if (file_exists($path)) {
-        include($path);
+    if (file_exists('./lib/php/public_footer.php')) {
+        include('./lib/php/public_footer.php');
     }
     ?>
-</nav>
+</footer>
+
+
 </body>
 </html>

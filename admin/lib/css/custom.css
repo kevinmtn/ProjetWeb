@@ -1,0 +1,136 @@
+body, html{
+    height:100%;
+}
+
+h4 {
+
+    text-align: center;
+    position: center;
+    margin-top: 100px;
+    color:white;
+    padding:1em 0;
+    overflow:hidden;
+    font-size:32px;
+    font-family:georgia;
+}
+
+
+h4:before, h4:after {
+    content:'';
+    width:3em;
+    border-bottom:rgba(255,255,255,0.3) solid;
+    display:inline-block;
+    vertical-align:middle;
+}
+h4:before {
+    margin-left:-100%;
+    margin-right:3em}
+h4:after {
+    margin-right:-100%;
+    margin-left:3em;}
+
+h2{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    font-family: "Fira Code";
+    font-size: 40px;
+    color: chocolate;
+}
+h2:before, h2:after {
+    content:'';
+    width:3em;
+    border-bottom: rgb(203, 129, 73) solid;
+    display:inline-block;
+    vertical-align:middle;
+}
+h2:before {
+    margin-left:-100%;
+    margin-right:3em}
+h2:after {
+    margin-right:-100%;
+    margin-left:3em;}
+
+
+h3{
+    text-align: center;
+    color: #dddddd;
+    font-family: "Calibri Light";
+    font-size: 23px;
+
+}
+
+
+
+b{
+    color: mintcream;
+    font-family: Carlito;
+
+
+}
+
+
+ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: normal;
+    color: slategray;
+    position: relative;
+    margin: 0.5em;
+
+
+}
+
+ul li a::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: firebrick;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s;
+}
+
+ul li a:hover::before {
+    width: 50%;
+    transform: translateX(100%);
+}
+
+#prixAccueil{
+
+    text-align: left;
+    font-size: 21px;
+    color: brown;
+}
+
+#stockRestant{
+    font-size: 12px;
+    text-align: right;
+    color: slategray;
+}
+#card-text{
+
+    font-size: 21px;
+    margin-top: -1em;
+    text-align: center;
+}
+
+#panier{
+    text-align: right;
+}
+
+#secondary {
+    background-color: brown;
+    border-radius: 0 4rem 4rem 0;
+    text-align: center;
+}
+#connection{
+    text-align: right;
+}
+
+
+
+
+
+

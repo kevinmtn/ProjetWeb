@@ -1,6 +1,6 @@
 <?php
 
-class ThemeBD extends Theme{
+class CategorieBD extends Categorie{
 
     private $_db; // recevoir la valeur de $cnx lors de la connexion à la bd dans index
     private $_data = array();
@@ -11,13 +11,13 @@ class ThemeBD extends Theme{
     }
 
 
-    public function getTheme(){
-        $query = "select * from bp_theme";
+    public function getCategorie(){
+        $query = "select * from Categorie";
         $_resultset = $this->_db->prepare($query);
-        $_resultset-> execute();
+        $_resultset->execute();
 
-        while( $d = $_resultset-> fetch()){
-            $_data[] = new Theme($d);
+        while($d = $_resultset->fetch()){
+            $_data[] = new Categorie($d);
         }
         //var_dump($_data);
         return $_data;
