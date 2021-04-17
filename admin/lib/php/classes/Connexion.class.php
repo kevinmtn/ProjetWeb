@@ -11,7 +11,7 @@ class Connexion{
                 self::$_instance= new PDO($dsn, $user,$password);
                 //print"Vous etes connecté à la base de donnée";
             } catch (PDOException $e){
-                print "Echec: ".$e->getMessage();
+                print "Echec de la connection: ".$e->getMessage();
             }
         }
 

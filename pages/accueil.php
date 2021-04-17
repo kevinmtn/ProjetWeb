@@ -88,7 +88,6 @@
         </div>
         <div class="card-grid-space">
             <div class="card"
-            "
             style="--bg-img:
             url('https://fr.cotedor.be/~/media/Cotedor/befr/Images/chocolat-cote-dor/temple/usine/usine')">
             <div>

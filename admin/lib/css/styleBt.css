@@ -51,7 +51,6 @@ body {
     color: whitesmoke;
     border-radius: 1em;
     padding: 1em;
-
     align-items: flex-end;
     background-size: cover;
     background-position: center;
@@ -67,7 +66,7 @@ body {
 .card h1 {
     font-size: 1.5em;
     text-align: center;
-    color: #e9bc36;
+    color: #dddddd;
     margin-top: 40px;
     margin-bottom: 70px;
 }
@@ -94,6 +93,7 @@ body {
 
 .card a {
     text-decoration: none;
+    color: #e7e7e7;
 }
 
 .card-title{
@@ -108,6 +108,10 @@ body {
 
     margin-top: 100px;
 }
+.cards-wrapper, #p{
+
+    color: #cccccc;
+}
 
 /* Pied de page*/
 .footer-basic {
@@ -121,15 +125,14 @@ body {
 
 .footer-basic .social {
     text-align: center;
-    padding-bottom: 25px;
     color: white;
 }
 
 .footer-basic .social > a {
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     display: inline-block;
     text-align: center;
     border-radius: 50%;
@@ -147,11 +150,10 @@ body {
 .footer-basic .copyright {
     margin-top: 14px;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     color: #aaa;
 }
 .btn {
-
     background-color: brown;
     color: whitesmoke;
     text-align: right;
@@ -159,9 +161,9 @@ body {
     margin-top: 25px;
 }
 
-.lien {
-
+a.lien {
     color: chocolate;
+    font-size: 28px;
 }
 
 .form-bg{
@@ -170,6 +172,9 @@ body {
 
 
 }
+/*
+formulaire
+ */
 .form-container{
     margin-top: 100px;
     background-color: #dddddd;
@@ -202,38 +207,23 @@ body {
 .form-container .form-horizontal .form-group{
     color: #333;
     width: 50%;
-    padding: 0 8px;
-    margin: 0 0 15px;
     display: inline-block;
+    text-align: center;
 }
-
 .form-container .form-horizontal .form-group label{
     font-size: 17px;
-    font-weight: 600;
+    text-align: center;
 }
 .form-container .form-horizontal .form-control{
     color: #888;
-    background: gainsboro;
-    font-weight: 400;
+    background: #ffffff;
     letter-spacing: 1px;
     height: 40px;
-    padding: 6px 12px;
     border-radius: 10px;
-    border: 2px solid #e7e7e7;
+    border: 2px solid #888888;
     box-shadow: none;
-}
-.form-container .form-horizontal .form-control:focus{ box-shadow: 0 0 5px  #aaaaaa; }
-.form-container .form-horizontal .check-terms{
-    padding: 0 8px;
-    margin: 0 0 25px;
-}
-.form-container .form-horizontal .check-terms .check-label{
-    color: #333;
-    font-size: 14px;
-    font-weight: 500;
-    font-style: italic;
-    vertical-align: top;
-    display: inline-block;
+    width: auto;
+    margin-left: 100px;
 }
 
 .form-container .signin-link{
@@ -259,25 +249,29 @@ body {
    margin-top: 60px;
 }
 
-.check-terms{
-    text-align: left;
-}
-.signin-link{
-    text-align: left;
-}
-
 .btn-primary {
     border-color: rgba( 255, 255, 255, 0);
-    background: -moz-linear-gradient(left,  brown 0%, #fca86c 99%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, chocolate 0%, brown 99%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(left, #2d130f ,#941717  99%);
+    background: -webkit-linear-gradient(left, #2d130f, #941717 99%);
     text-transform: uppercase;
-    border-radius: .15rem;
+    border-radius: .10em;
     width: auto;
     font-family: 'PT Sans', sans-serif;
     letter-spacing: 2px;
     margin-top: 80px;
 }
 
+.btn-primary:hover{
+
+    border-color: #888888;
+    color: #888888;
+}
+.btn-primary >a:hover{
+    color: #aaaaaa;
+}
+/*
+modal de connection
+ */
 .modal-body {
     display: flex;
     padding: 0;
@@ -292,14 +286,14 @@ body {
     -moz-box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
     box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
 }
-.modal-content h1, .modal-content h2, .modal-content h3 {
+.modal-content h1{
     text-align: center;
-}
-.modal-content h1 {
     font-size: 1.4em;
     text-transform: uppercase;
     margin-bottom: 50px;
+    color: #333333;
 }
+
 
 .modal-content h3 {
     font-size: 1.4em;
@@ -324,4 +318,104 @@ body {
     padding: 50px;
     margin-top: 30px;
     margin-left: 15px;
+}
+/*
+carte pour la page de connection
+ */
+
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+    width:100%;
+    margin:auto;
+    margin-top: 50px;
+    max-width:670px;
+    min-height:460px;
+    position:relative;
+    background:url(http://cdn.cdnparenting.com/articles/2018/07/230301934-H-1024x700.jpg) no-repeat center;
+    color: #333333;
+}
+.login-html{
+    width:100%;
+    height:100%;
+    position:absolute;
+    padding:90px 70px 50px 70px;
+    background:rgba(170, 170, 170,.6);
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position:absolute;
+    transform:rotateY(180deg);
+    backface-visibility:hidden;
+    transition:all .4s linear;
+    color: maroon;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+    display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+    text-transform:uppercase;
+}
+.login-html .tab{
+    font-size:20px;
+    margin-right:15px;
+    padding-bottom:5px;
+    margin:0 15px 10px 0;
+    display:inline-block;
+    border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+    color: black;
+    border-color: maroon;
+    font-size: 26px;
+    font-family: Cambria;
+    font-weight: bold;
+}
+.login-form{
+    min-height:345px;
+    position:relative;
+    perspective:1000px;
+    transform-style:preserve-3d;
+}
+.login-form .group{
+    margin-bottom:50px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+    width:100%;
+    color:#fff;
+    display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+    border:none;
+    padding:15px 20px;
+    border-radius:25px;
+    background:rgba(255,255,255,.1);
+}
+
+.login-form .group .button{
+    text-align: center;
+    margin-top: 90px;
+    background: maroon;
+}
+
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+    transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+    transform:rotate(0);
 }

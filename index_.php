@@ -3,7 +3,7 @@
 //index public
 session_start();
 
-//include('./admin/lib/php/admin_liste_include.php');
+include('./admin/lib/php/admin_liste_include.php');
 include('./admin/lib/php/pg_connect.php');
 include('./admin/lib/php/autoload.php');
 $cnx = Connexion::getInstance($dsn, $user, $password);
@@ -51,6 +51,7 @@ $cnx = Connexion::getInstance($dsn, $user, $password);
     <section class="center-block">
         <div id="main">
             <?php
+
             if (!isset($_SESSION['page'])) {
                 $_SESSION['page'] = "accueil.php";
             }

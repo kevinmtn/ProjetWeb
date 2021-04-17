@@ -2,8 +2,11 @@ body, html{
     height:100%;
 }
 
-h4 {
+p{
+    color: #cccccc;
+}
 
+h4 {
     text-align: center;
     position: center;
     margin-top: 100px;
@@ -13,7 +16,6 @@ h4 {
     font-size:32px;
     font-family:georgia;
 }
-
 
 h4:before, h4:after {
     content:'';
@@ -51,22 +53,23 @@ h2:after {
     margin-right:-100%;
     margin-left:3em;}
 
-
 h3{
     text-align: center;
     color: #dddddd;
     font-family: "Calibri Light";
     font-size: 23px;
-
 }
 
-
+h5{
+    color: #dddddd;
+    font-size: 23px;
+    margin-top: 150px;
+    text-align: center;
+}
 
 b{
     color: mintcream;
     font-family: Carlito;
-
-
 }
 
 
@@ -77,8 +80,6 @@ ul li a {
     color: slategray;
     position: relative;
     margin: 0.5em;
-
-
 }
 
 ul li a::before {
@@ -110,7 +111,6 @@ ul li a:hover::before {
     color: slategray;
 }
 #card-text{
-
     font-size: 21px;
     margin-top: -1em;
     text-align: center;
@@ -129,8 +129,87 @@ ul li a:hover::before {
     text-align: right;
 }
 
+table, th, td {
+    border: none;
+    color: #333333;
+    background-color: #dddddd;
+    font-size: 22px;
+    font-family: "Berlin Sans FB Demi";
+    margin:auto;
+    border-radius: 50px;
+}
 
+table, tr{
+    height: 50px;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 20px;
+}
 
+a{
+   color: #dddddd;
+    text-decoration: none;
+}
 
+.connection{
+    text-align: center;
+}
 
+.connection.a{
+    text-decoration: none;
+    color: #aaaaaa;
+}
 
+.stock{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.position{
+    text-align: right;
+}
+
+.recap{
+    font-family: Carlito;
+    font-size: 100px;
+}
+
+.total{
+    color: maroon;
+    font-size: 37px;
+    font-family: "Bodoni MT";
+    margin-top: 50px;
+}
+.recap{
+ width: 1200px;
+}
+
+.table-users{
+    width: 110%;
+}
+
+.avis{
+    font-size: 21px;
+    width: 100%;
+    color: #dddddd;
+    background: -webkit-linear-gradient(left, #000000, #830000 99%);
+    text-align: center;
+    border-radius: 25px;
+}
+.form-group{
+    width: 50%;
+}
+.form-control2{
+    width: 120px;
+    font-size: 16px;
+}
+#label.avis{
+    width: 80%;
+}
+.container, #p{
+    color: #1d1b1b;
+}
+
+a:hover{
+    color: #2d130f;
+}

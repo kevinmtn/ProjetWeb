@@ -3,9 +3,8 @@
 //index admin
 session_start();
 
-//include('./admin/lib/php/admin_liste_include.php');
-include('./admin/lib/php/pg_connect.php');
-include('./admin/lib/php/autoload.php');
+require('./lib/php/admin_liste_include.php');
+
 $cnx = Connexion::getInstance($dsn, $user, $password);
 ?>
 
@@ -33,8 +32,23 @@ $cnx = Connexion::getInstance($dsn, $user, $password);
 </head>
 
 <body class="bg-dark">
-<div id="page">
-    <header class="img_header">
+<div id="page" class="container">
+
+    <header>
+
+
+        <?php /*
+                if (file_exists('./lib/php/header.php')) {
+                    include ('./lib/php/header.php');
+                }*/
+        ?>
+
+        <?php
+        if (file_exists('./lib/php/admin_menu.php')) {
+            include('./lib/php/admin_menu.php');
+        }
+        ?>
+
 
     </header>
     <section id="colGauche">
@@ -73,8 +87,8 @@ $cnx = Connexion::getInstance($dsn, $user, $password);
 
 <footer>
     <?php
-    if (file_exists('./lib/php/public_footer.php')) {
-        include('./lib/php/public_footer.php');
+    if (file_exists('./lib/php/admin_footer.php')) {
+        include('./lib/php/admin_footer.php');
     }
     ?>
 </footer>
