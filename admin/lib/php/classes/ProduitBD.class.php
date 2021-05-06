@@ -104,6 +104,28 @@ class ProduitBD extends Produit
         }
     }
 
+    public function NewProduit($nom_produit, $photo, $prix, $stock, $description, $cat)
+    {
+        try {
+            $this->_db->beginTransaction();
+            $query = "insert into produit(id_produit, nom_produit, photo, prix, stock, description, id_cat) values (NEXTVAL('seq_sans_serial'),:nom_produit,:photo,:prix,:stock,:description,:id_cat) ";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue(':nom_produit', $nom_produit);
+            $_resultset->bindValue(':photo', $photo);
+            $_resultset->bindValue(':prix', $prix);
+            $_resultset->bindValue(':stock', $stock);
+            $_resultset->bindValue(':description', $description);
+            $_resultset->bindValue(':id_cat', $cat);
+            $_resultset->execute();
+            $this->_db->commit();
+
+        } catch (PDOException $e) {
+            print $e->getMessage();
+        }
+
+
+    }
+
     public function getProduitbyId($id_produit)
     {
 
@@ -111,7 +133,30 @@ class ProduitBD extends Produit
             $this->_db->beginTransaction();
             $query = "select * from produit where  id_produit=:id_produit";
             $resultset = $this->_db->prepare($query);
-            $resultset->bindValue(':id_produit',$id_produit);
+            $resultset->bindValue(':id_produit', $id_produit);
+            $resultset->execute();
+            $data = $resultset->fetch();
+            if (!empty($data)) {
+                $_array[0] = new Produit($data);
+            } else {
+                $_array = null;
+            }
+            $this->_db->commit();
+
+        } catch (PDOException $e) {
+            print $e->getMessage();
+            $_array = null;
+        }
+        return $_array;
+    }
+
+    public function suppression($id_produit)
+    {
+        try {
+            $this->_db->beginTransaction();
+            $query = "DELETE from produit WHERE id_produit=:id_produit";
+            $resultset = $this->_db->prepare($query);
+            $resultset->bindValue(':id_produit', $id_produit);
             $resultset->execute();
             $data = $resultset->fetch();
             if (!empty($data)) {

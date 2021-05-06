@@ -105,15 +105,18 @@ $id = new ProduitBD($cnx);
         if (isset($_SESSION['Connexion'])) { //si le client est connecté il pourra faire un avis sur ses commandes
         ?>
     </div>
+
     <div class="connection">
-        <h5> Avez vous un avis à partager ?</h5>
+
+        <h5> Souhaitez vous partager votre avis ?</h5>
         <button type="button" class="btn btn-primary">
             <a href="index_.php?page=creationAvis.php" class="button">Ecrire mon avis</a>
         </button>
+
     </div>
     <?php
-    }else{ //si pas il devra se connecter avant
-            ?>
+    } else { //si pas il devra se connecter avant
+        ?>
         <div class="connection">
             <h5> Souhaitez vous faire votre avis ?</h5>
             <button type="button" class="btn btn-primary">
@@ -121,7 +124,8 @@ $id = new ProduitBD($cnx);
             </button>
         </div>
 
-            <?php
+        <?php
     }
     ?>
+
 </div>

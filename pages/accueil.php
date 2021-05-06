@@ -24,7 +24,7 @@
                 <div class="carousel-item">
                     <img class="d-block img-fluid" src="./admin/images/accueil1.jpg" alt="chocolat">
                     <div class="carousel-caption d-none d-md-block">
-                        <h4>Notre chocolat Belge elu le meilleur du monde!</h4>
+                        <h4>Notre chocolat Belge élu meilleur du monde!</h4>
                     </div>
                 </div>
                 <div class="carousel-item">

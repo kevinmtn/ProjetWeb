@@ -9,6 +9,7 @@ if (isset($_GET['id_cat'])) {
 
 $nbr = count($liste);
 
+
 if (isset($_GET['action'])) {
     //si le client ne s'est pas déjà connecté, sa variable de session id_client n'existe pas
     // on peut attribuer la valeur 0 à id_client en attendant une connexion lors de la validation des commandes
@@ -20,10 +21,7 @@ if (isset($_GET['action'])) {
     }
 
     //chaque nouvel ajout se place à la fin des enregistrements existants pour ce client
-    //Une fois les achats terminés, le client peut cliquer sur un lien "Panier" qui le dirigera vers une
-    //page qui récapitule ses achats, voit s'il est connecté ($id_client différent de 0) ou non.  Si l'id_client est
-    //égal à 0, on lui affiche un formulaire (pourquoi pas une fenêtre modale encore à voir au cours).
-    //ensuite la page de validation instancie la classe CommandeBD
+
     $_SESSION['panier'][] = array(
         'login' => $login,
         'id_produit' => $_GET['id'],
@@ -31,6 +29,7 @@ if (isset($_GET['action'])) {
         'photo' => $_GET['photo']
     );
 
+    print "<meta http-equiv=\"refresh\": Content=\"0;URL=index_.php\">";
 
 }
 //var_dump($liste);

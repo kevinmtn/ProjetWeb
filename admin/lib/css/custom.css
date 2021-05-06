@@ -8,7 +8,6 @@ p{
 
 h4 {
     text-align: center;
-    position: center;
     margin-top: 100px;
     color:white;
     padding:1em 0;
@@ -63,13 +62,14 @@ h3{
 h5{
     color: #dddddd;
     font-size: 23px;
-    margin-top: 150px;
+    margin-top: 80px;
     text-align: center;
 }
 
 b{
     color: mintcream;
     font-family: Carlito;
+    font-size: 19px;
 }
 
 
@@ -110,6 +110,13 @@ ul li a:hover::before {
     text-align: right;
     color: slategray;
 }
+
+#gestionProd{
+    text-align: right;
+    font-size: 14px;
+    color: #333333;
+
+}
 #card-text{
     font-size: 21px;
     margin-top: -1em;
@@ -129,14 +136,12 @@ ul li a:hover::before {
     text-align: right;
 }
 
-table, th, td {
-    border: none;
+table,tr, th, td {
     color: #333333;
     background-color: #dddddd;
     font-size: 22px;
     font-family: "Berlin Sans FB Demi";
-    margin:auto;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 table, tr{
@@ -190,9 +195,10 @@ a{
 
 .avis{
     font-size: 21px;
-    width: 100%;
+    width: auto;
     color: #dddddd;
-    background: -webkit-linear-gradient(left, #000000, #830000 99%);
+    background:url(https://images5.alphacoders.com/108/1089822.jpg) no-repeat center;
+    background-size: 1300px;
     text-align: center;
     border-radius: 25px;
 }
@@ -212,4 +218,40 @@ a{
 
 a:hover{
     color: #2d130f;
+}
+
+.row.pt-2.pb-2.text-center.text-dark{
+    background-color: #cccccc;
+    font-family: "Fira Code";
+    font-size: 19px;
+}
+
+.vide {
+    margin-top: 50px;
+    filter: invert(100%);
+    -webkit-filter:invert(100%);
+    text-align: center;
+}
+
+.trait
+{
+    border-top: 1px solid #000;
+    width :auto;
+    margin-bottom: 15px;
+}
+
+.vide2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.position2{
+    margin-top: -55px;
+    text-align: right;
+}
+
+.btn-close{
+    margin-left: 150px;
+    background-color: black;
+    color: white;
 }

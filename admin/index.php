@@ -10,7 +10,7 @@ $cnx = Connexion::getInstance($dsn, $user, $password);
 
 <html>
 <head>
-    <title>Project web Kevin Maton</title>
+    <title>Project web Admin</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
             integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -20,14 +20,11 @@ $cnx = Connexion::getInstance($dsn, $user, $password);
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="./lib/css/style.css"/>
-    <link rel="stylesheet" href="./lib/css/custom.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./lib/css/style_pc.css"/>
-    <link rel="stylesheet" href="./lib/css/mediaqueries.css"/>
     <link rel="stylesheet" href="./lib/css/styleBt.css"/>
     <link rel="stylesheet" href="./lib/css/custom.css"/>
+    <link rel="icon"  href="../admin/pages/images/maintenance.png">" />
     <script src="./lib/js/fonctions_jquery.js"></script>
 </head>
 
@@ -36,19 +33,11 @@ $cnx = Connexion::getInstance($dsn, $user, $password);
 
     <header>
 
-
-        <?php /*
-                if (file_exists('./lib/php/header.php')) {
-                    include ('./lib/php/header.php');
-                }*/
-        ?>
-
         <?php
         if (file_exists('./lib/php/admin_menu.php')) {
             include('./lib/php/admin_menu.php');
         }
         ?>
-
 
     </header>
     <section id="colGauche">

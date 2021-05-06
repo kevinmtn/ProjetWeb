@@ -109,7 +109,6 @@ body {
     margin-top: 100px;
 }
 .cards-wrapper, #p{
-
     color: #cccccc;
 }
 
@@ -169,8 +168,6 @@ a.lien {
 .form-bg{
     text-align: center;
     flex-flow: row wrap;
-
-
 }
 /*
 formulaire
@@ -184,6 +181,8 @@ formulaire
     width: 900px;
     flex-flow: row wrap;
     align-items: center;
+text-align: -webkit-center;
+    margin-left: 90px;
 }
 .form-container .title{
     margin-top: 10px;
@@ -294,19 +293,17 @@ modal de connection
     color: #333333;
 }
 
-
 .modal-content h3 {
     font-size: 1.4em;
     color: white;
     margin-top: 150px;
     font-family: 'PT Sans', sans-serif;
-
 }
 .modal-content h5 {
     font-size: 0.8em;
-    letter-spacing: 2px;
-    color: #aaaaaa;
+    color: #cacaca;
     margin-top: 100px;
+    font-family: cursive;
 }
 .column {
     flex: 50%;
@@ -335,7 +332,8 @@ a{color:inherit;text-decoration:none}
     max-width:670px;
     min-height:460px;
     position:relative;
-    background:url(http://cdn.cdnparenting.com/articles/2018/07/230301934-H-1024x700.jpg) no-repeat center;
+    background:url(https://i.pinimg.com/originals/d8/81/85/d881858b12fa246a03e1fbcad63b4182.jpg) no-repeat center;
+    background-size: 900px;
     color: #333333;
 }
 .login-html{
@@ -419,3 +417,4 @@ a{color:inherit;text-decoration:none}
 .login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
     transform:rotate(0);
 }
+

@@ -66,7 +66,7 @@ if (isset($_GET['submit_client'])) {
                             <div class="form-group">
                                 <label>Numero d''habitation</label>
                                 <input type="number" class="form-control" placeholder="0" id="numero" name="numero"
-                                       required>
+                                       max="1000" min="0" required>
                             </div>
                             <div class="connection">
                                 <button class="btn btn-primary" type="submit" id="submit_client" name="submit_client">

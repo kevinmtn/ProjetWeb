@@ -8,10 +8,12 @@ for ($i = 0; $i < $nbr1; $i++) {
     $id_cli = $compte[$i]->id_client;
 }
 
-$_SESSION['id_client'] = $id_cli;
+$_SESSION['id_client'] = $id_cli;  //recuperation de l'id du client connecté
 $comm = array();
 $commande = new CommandeBD($cnx);
 $comm = $commande->getCommande($_SESSION['id_client'] + 0);
+
+if ($comm != null){ //si le client a passé une commande
 $nbr = count($comm);
 //var_dump($nbr);
 
@@ -54,12 +56,21 @@ if ($nbr != 0) {
             $tableau = $_SESSION['id_p'];
 
             $prod = $id->getProduitbyId($_SESSION['id_p']);  //recuperation de l'id du produit pour afficher ses informations
-            $nbr2 = count($prod);
-            for ($j = 0; $j < $nbr2; $j++) {
+            if ($prod != null) {
+                $nbr2 = count($prod);
+                for ($j = 0; $j < $nbr2; $j++) {
+                    ?>
+                    <div class="col-2 pt-1 pb-1">
+                        <img src="./admin/images/<?php print $prod[$j]->photo; ?>" alt="Image"
+                             width="80%"/>
+                    </div>
+                    <?php
+                }
+            }
+            else{ //si le produit a été supprimé par un admin
                 ?>
-                <div class="col-2 pt-1 pb-1">
-                    <img src="./admin/images/<?php print $prod[$j]->photo; ?>" alt="Image"
-                         width="80%"/>
+                <div class="col-2 pt-5 pb-1">
+                    Produit supprimé*
                 </div>
                 <?php
             }
@@ -68,14 +79,24 @@ if ($nbr != 0) {
             <?php
             $tableau = $_SESSION['id_p'];
             $prod = $id->getProduitbyId($_SESSION['id_p']);  //recuperation de l'id du produit pour afficher ses informations
-            $nbr2 = count($prod);
-            for ($j = 0; $j < $nbr2; $j++) {
+            if ($prod != null) {
+                $nbr2 = count($prod);
+                for ($j = 0; $j < $nbr2; $j++) {
+                    ?>
+                    <div class="col-3 pt-5 pb-2">
+                        <?php print $prod[$j]->nom_produit; ?>
+                    </div>
+                    <?php
+                }
+            }
+            else{ //si le produit a été supprimé par un admin
                 ?>
                 <div class="col-3 pt-5 pb-2">
-                    <?php print $prod[$j]->nom_produit; ?>
+                    Produit supprimé
                 </div>
                 <?php
             }
+
             ?>
             <div class="col-3 pt-5 pb-2">
                 <?php print $comm[$i]->date_commande; ?>
@@ -89,26 +110,40 @@ if ($nbr != 0) {
             $tableau = $_SESSION['id_p'];
 
             $prod = $id->getProduitbyId($_SESSION['id_p']);  //recuperation de l'id du produit pour afficher ses informations
-            $nbr2 = count($prod);
-            for ($j = 0; $j < $nbr2; $j++) {
+            if ($prod != null) {
+                $nbr2 = count($prod);
+                for ($j = 0; $j < $nbr2; $j++) {
+                    ?>
+                    <div class="col-2 pt-5 pb-2">
+                    <?php print $prod[$j]->prix; ?>
+                    <?php print '€';?>
+                    </div>
+                    <?php
+                }
+            }else{ //si le produit a été supprimé par un admin
                 ?>
                 <div class="col-2 pt-5 pb-2">
-                <?php print $prod[$j]->prix; ?>
-                <?php print '€';
+                    Produit supprimé
+                </div>
+        <?php
             }
-            ?>
-            </div>
-
-            <?php
         }
-        ?> </div>
+        ?>
 
+    </div>
+    <p> *Si vous ne pouvez pas voir votre commande, le produit a été supprimé par un administrateur</p>
     <?php
+    }
 
-    } else {
+    } else { //si le client n'a pas passé de commande
         ?>
 
         <h4> Vous n'avez aucune commande pour le moment</h4>
+        <div class="vide2">
+            <a href="index_.php?page=produits_accueil.php" title="Faire une commande">
+                <img src="./admin/images/commandeVide.JPG" width="200px">
+            </a>
+        </div>
         <?php
     }
     ?>

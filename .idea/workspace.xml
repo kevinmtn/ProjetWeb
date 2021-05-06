@@ -20,32 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="811281c6-2479-47f7-84a9-b7647cc30471" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dumps/plpgsql/ajout_theme.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/images/accueil3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/images/accueil3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/images/carousel2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/images/caroussel5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/images/carrousel1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/images/carrousel2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/images/carrousel3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/images/carrousel4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/images/Produit1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/images/belge.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/mediaqueries.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/css/styleBt.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/styleBt.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/Connexion.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/Connexion.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/style_pc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/tablette.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/js/fonctions_jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/js/fonctions_jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/accueil_admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/verification_connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/verification_connexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/produitAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/produitAdmin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index_.php" beforeDir="false" afterPath="$PROJECT_DIR$/index_.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/avis.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/avis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/commande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/compte.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/compte.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page404.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/creationAvis.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creationAvis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/newCompte.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/newCompte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pagePanier.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pagePanier.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/produits_accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/produits_accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/recapCommande.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recapCommande.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +88,19 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\Projet_kevinMaton\admin\lib\php\classes" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -133,6 +147,27 @@
       <workItem from="1618561102645" duration="8029000" />
       <workItem from="1618645466164" duration="4715000" />
       <workItem from="1618654658017" duration="77000" />
+      <workItem from="1618736621702" duration="2341000" />
+      <workItem from="1618898600681" duration="1352000" />
+      <workItem from="1618902372137" duration="877000" />
+      <workItem from="1619008938466" duration="2781000" />
+      <workItem from="1619087637228" duration="1919000" />
+      <workItem from="1619107018769" duration="6410000" />
+      <workItem from="1619158564850" duration="3553000" />
+      <workItem from="1619251109508" duration="10190000" />
+      <workItem from="1619263335701" duration="4529000" />
+      <workItem from="1619271079663" duration="4266000" />
+      <workItem from="1619334992187" duration="4345000" />
+      <workItem from="1619342078468" duration="767000" />
+      <workItem from="1619445192188" duration="5874000" />
+      <workItem from="1619503957113" duration="13099000" />
+      <workItem from="1619517968519" duration="3152000" />
+      <workItem from="1619528386300" duration="544000" />
+      <workItem from="1620042780169" duration="3604000" />
+      <workItem from="1620053132877" duration="264000" />
+      <workItem from="1620213737934" duration="13134000" />
+      <workItem from="1620281810133" duration="1952000" />
+      <workItem from="1620289853693" duration="316000" />
     </task>
     <task id="LOCAL-00001" summary="Depot du 15 mars">
       <created>1615888409926</created>
@@ -172,30 +207,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1617184442359" />
-    <state x="516" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617357849894">
+    <state x="516" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620044454958">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="516" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1617357849894" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616690698946">
+    <state x="516" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1620044454958" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618898671723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1616690698946" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1618898671723" />
     <state x="772" y="92" key="NewPhpClassDialog" timestamp="1617281907972">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="772" y="92" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1617281907972" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1618475306500">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1620213764641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1618475306500" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1620213764641" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1619259189177">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1619259189177" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615888420199">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1615888420199" />
-    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1618488463140">
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1618737186766">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1618488463140" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1618737186766" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617807669195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

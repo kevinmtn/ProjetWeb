@@ -13,7 +13,6 @@ if (isset($_POST['submit_login'])) {
             $_SESSION['page'] = "compte.php";
 
             print "<meta http-equiv=\"refresh\": Content=\"0;URL=./index_.php\">";
-            /* else possible pour tester un statut "visiteur" au lieu d'"admin" */
             $_SESSION['login'] = $_POST['login'];
             $_SESSION['motdepasse'] = $_POST['motdepasse'];
 
@@ -63,6 +62,7 @@ if (isset($_POST['submit_login'])) {
                     </div>
                     <div class="column" id="secondary">
                         <div class="sec-content">
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
                             <h3>Ravis de vous revoir !</h3>
                             <h5> Ne manquez pas nos nouveautés dans la page produit !</h5>
 
@@ -107,7 +107,7 @@ if (isset($_POST['submit_admin'])) {//connection pour les admins
             <div class="login-form">
                 <div class="sign-in-htm">
                     <div class="group">
-                        <input type="submit" class="button" value="Vous possedez un compte?" data-toggle="modal" data-target="#co"">
+                        <input type="submit" class="button" value="Vous possedez un compte?" data-toggle="modal" data-target="#co">
                     </div>
 
                 </div>
@@ -119,7 +119,6 @@ if (isset($_POST['submit_admin'])) {//connection pour les admins
             </div>
         </div>
     </div>
-
 
     <div class="connection">
         <h4>Administrateur</h4>
@@ -141,7 +140,9 @@ if (isset($_POST['submit_admin'])) {//connection pour les admins
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
+
                         <div class="column" id="main">
+
                             <h1>Vous connecter </h1>
                             <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="post">
                                 <div class="form-group">
@@ -154,13 +155,18 @@ if (isset($_POST['submit_admin'])) {//connection pour les admins
                                     <input type="password" class="form-control" id="password" name="password"
                                            aria-describedby="mdp" placeholder="******">
                                 </div>
+
+
                                 <button type="submit" class="btn btn-primary" id="submit_admin" name="submit_admin">Se
                                     connecter
                                 </button>
+
+
                             </form>
 
                         </div>
                         <div>
+
                             <svg width="67px" height="580px" viewBox="0 0 67 578" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -170,9 +176,11 @@ if (isset($_POST['submit_admin'])) {//connection pour les admins
                                 </g>
                             </svg>
                         </div>
+
                         <div class="column" id="secondary">
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
                             <div class="sec-content">
-                                <h5> ! Ce contenu reservé aux administrateur du site</h5>
+                                <h3> Reservé aux administrateurs !</h3>
                             </div>
                         </div>
                     </div>

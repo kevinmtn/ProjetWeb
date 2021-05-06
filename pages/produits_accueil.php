@@ -8,7 +8,7 @@ $nbr_cat = count($liste_cat);
 
 
 <div class=container>
-    <h2> Decouvrez notre gamme de chococats Belges</h2>
+    <h2> Decouvrez notre gamme de chococats Belge</h2>
     <div class="card-group">
         <?php
         for ($i = 0; $i < $nbr_cat; $i++) {
